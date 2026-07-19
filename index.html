@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Юридический Помощник по ОСАГО и КАСКО — Telegram и Max бот</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Бот помогает быстро подобрать юридические документы для ОСАГО и КАСКО: заявления, претензии, уведомления и другие шаблоны, составленные юристами.">
+    <meta name="keywords" content="ОСАГО, КАСКО, юридические документы, шаблоны, страховая компания, претензия, заявление, бот, Telegram бот, Max бот">
+    <meta name="author" content="ThreeHeadsBot">
+
+    <!-- Адаптивность -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Open Graph (для соцсетей и мессенджеров) -->
+    <meta property="og:title" content="Юридический Помощник по ОСАГО и КАСКО">
+    <meta property="og:description" content="Готовые юридические документы для ОСАГО и КАСКО — быстро, удобно.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://threeheadsbot.ru">
+    <meta property="og:image" content="https://threeheadsbot.ru/logo.png">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Inter', Arial, sans-serif;
+            background: #ffffff;
+            color: #1a1a1a;
+        }
+
+        header {
+            padding: 24px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .logo-block {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .logo-block img {
+            height: 60px;
+            width: auto;
+        }
+
+        header h1 {
+            font-size: 22px;
+            margin: 0;
+            font-weight: 600;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 120px 20px 100px;
+            max-width: 900px;
+            margin: auto;
+        }
+        .hero h2 {
+            font-size: 46px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 40px;
+            color: #555;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+
+        .button {
+            background: #0d6efd;
+            color: white;
+            padding: 18px 40px;
+            border-radius: 14px;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            transition: transform 0.15s ease;
+        }
+
+        .button:hover {
+            transform: translateY(-3px);
+        }
+
+        .button.secondary {
+            background: #10b981;
+        }
+
+        .button img {
+            height: 28px;
+            width: 28px;
+        }
+
+        .section {
+            padding: 80px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+        .section h3 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .feature {
+            background: #f9fafc;
+            padding: 30px;
+            border-radius: 14px;
+            border: 1px solid #ececec;
+        }
+        .feature h4 {
+            margin-top: 0;
+            font-size: 22px;
+            font-weight: 600;
+        }
+        .feature p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        footer {
+            background: #f7f7f7;
+            text-align: center;
+            padding: 60px 20px;
+            margin-top: 60px;
+        }
+        footer p {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo-block">
+        <img src="logo.png" alt="Логотип бота">
+        <h1>Юридический Помощник по ОСАГО и КАСКО</h1>
+    </div>
+
+    <div class="buttons">
+        <a class="button" href="https://t.me/ThreeHeadsBot">
+            <img src="telegram.png" alt="Telegram">
+            Telegram‑бот
+        </a>
+        <a class="button secondary" href="https://max.ru/id213001406917_bot">
+            <img src="max.png" alt="Max">
+            Бот в Max
+        </a>
+    </div>
+</header>
+
+<section class="hero">
+    <h2>Юридический Помощник по ОСАГО и КАСКО</h2>
+    <p>Бот помогает быстро подготовить корректные юридические документы для подачи в страховую компанию по ОСАГО и КАСКО. 
+       Экономьте время, избегайте ошибок и повышайте шанс успешного рассмотрения.</p>
+
+    <div class="buttons">
+        <a class="button" href="https://t.me/ThreeHeadsBot">
+            <img src="telegram.png" alt="Telegram">
+            Открыть Telegram‑бота
+        </a>
+        <a class="button secondary" href="https://max.ru/id213001406917_bot">
+            <img src="max.png" alt="Max">
+            Открыть бота в Max
+        </a>
+    </div>
+</section>
+
+<section class="section">
+    <h3>Что вы получаете</h3>
+    <div class="features">
+        <div class="feature">
+            <h4>✔ Готовые юридические шаблоны</h4>
+            <p>Заявления, претензии, уведомления, акты — всё, что нужно для ОСАГО и КАСКО.</p>
+        </div>
+        <div class="feature">
+            <h4>✔ Правильная структура</h4>
+            <p>Все документы составлены юристами с судебной практикой, чтобы избежать отказов от страховых и решить исход в пользу автовладельцев.</p>
+        </div>
+        <div class="feature">
+            <h4>✔ Экономия времени</h4>
+            <p>Не нужно искать образцы в интернете — бот выдаёт готовый документ за секунды.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <h3>Почему нам доверяют</h3>
+    <div class="features">
+        <div class="feature">
+            <h4>✔ Профессиональные шаблоны</h4>
+            <p>У нас вы найдете грамотно составленные документы, подготовленные опытными юристами. Они учитывают типичные уловки страховых компаний и помогают избежать затягивания сроков, недоплат, навязывания «своего» сервиса и отказов по формальным основаниям.</p>
+        </div>
+
+        <div class="feature">
+            <h4>✔ Подходят для любой страховой</h4>
+            <p>Каждый документ универсален и подходит для подачи в любую страховую компанию — без необходимости адаптации.</p>
+        </div>
+
+        <div class="feature">
+            <h4>✔ Экономия времени и денег</h4>
+            <p>Вместо дорогих консультаций и очередей вы за минуту находите нужный документ — быстро, удобно и без лишних затрат.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <h3>Получите документы прямо сейчас</h3>
+    <p>Боты работают 24/7 и выдают шаблоны за секунды.</p>
+
+    <div class="buttons">
+        <a class="button" href="https://t.me/ThreeHeadsBot">
+            <img src="telegram.png" alt="Telegram">
+            Telegram‑бот
+        </a>
+        <a class="button secondary" href="https://max.ru/id213001406917_bot">
+            <img src="max.png" alt="Max">
+            Бот в Max
+        </a>
+    </div>
+</footer>
+
+</body>
+</html>
