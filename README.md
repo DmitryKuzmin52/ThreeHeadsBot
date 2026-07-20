@@ -1,1 +1,3 @@
-# ThreeHeadsBot
+## Сайт проекта
+
+https://threeheadsbot.ru/
