@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
 
+# Указываем основное зеркало сайта (рекомендация Яндекса)
+Host: https://threeheadsbot.ru
+
+# Карта сайта для ускоренной индексации
 Sitemap: https://threeheadsbot.ru/sitemap.xml
