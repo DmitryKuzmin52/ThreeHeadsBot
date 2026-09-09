@@ -28,148 +28,178 @@
     <meta property="og:image:height" content="630">
 
     <style>
-        body {
-            margin: 0;
-            font-family: 'Inter', Arial, sans-serif;
-            background: #ffffff;
-            color: #1a1a1a;
-        }
+        /* ===== БАЗА ===== */
 
-        header {
-            padding: 24px 40px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid #f0f0f0;
-        }
+body {
+    margin: 0;
+    font-family: 'Inter', Arial, sans-serif;
+    background: #ffffff;
+    color: #1a1a1a;
+    font-size: 15px;
+    line-height: 1.35;
+    letter-spacing: 0.1px;
+    font-weight: 400;
+}
 
-        .logo-block {
-            display: flex;
-            align-items: center;
-            gap: 16px;
-        }
+/* ===== HEADER ===== */
 
-        .logo-block img {
-            height: 60px;
-            width: auto;
-        }
+header {
+    padding: 18px 32px; /* было 24px 40px */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f0f0f0;
+}
 
-        header h1 {
-            font-size: 22px;
-            margin: 0;
-            font-weight: 600;
-        }
+.logo-block {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* было 16px */
+}
 
-        .hero {
-            text-align: center;
-            padding: 120px 20px 100px;
-            max-width: 900px;
-            margin: auto;
-        }
-        .hero h1 {
-            font-size: 46px;
-            margin-bottom: 20px;
-            font-weight: 700;
-        }
-        .hero h2 {
-            font-size: 28px;
-            margin-bottom: 20px;
-            font-weight: 600;
-        }
-        .hero p {
-            font-size: 20px;
-            margin-bottom: 40px;
-            color: #555;
-        }
+.logo-block img {
+    height: 48px; /* было 60px */
+    width: auto;
+}
 
-        .buttons {
-            display: flex;
-            justify-content: center;
-            gap: 24px;
-            flex-wrap: wrap;
-        }
+header h1 {
+    font-size: 18px; /* было 22px */
+    margin: 0;
+    font-weight: 600;
+}
 
-        .button {
-            background: #0d6efd;
-            color: white;
-            padding: 18px 40px;
-            border-radius: 14px;
-            text-decoration: none;
-            font-size: 20px;
-            font-weight: 600;
-            display: flex;
-            align-items: center;
-            gap: 14px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-            transition: transform 0.15s ease;
-        }
+/* ===== HERO ===== */
 
-        .button:hover {
-            transform: translateY(-3px);
-        }
+.hero {
+    text-align: center;
+    padding: 80px 20px 60px; /* было 120px 20px 100px */
+    max-width: 900px;
+    margin: auto;
+}
 
-        .button.secondary {
-            background: #10b981;
-        }
+.hero h1 {
+    font-size: 34px; /* было 46px */
+    margin-bottom: 16px;
+    font-weight: 700;
+}
 
-        .button img {
-            height: 28px;
-            width: 28px;
-        }
+.hero h2 {
+    font-size: 22px; /* было 28px */
+    margin-bottom: 16px;
+    font-weight: 600;
+}
 
-        .section {
-            padding: 80px 20px;
-            max-width: 1100px;
-            margin: auto;
-        }
-        .section h2 {
-            font-size: 32px;
-            margin-bottom: 20px;
-            text-align: center;
-            font-weight: 600;
-        }
-        .section h3 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            font-weight: 600;
-        }
+.hero p {
+    font-size: 16px; /* было 20px */
+    margin-bottom: 28px;
+    color: #555;
+}
 
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
-        }
-        .feature {
-            background: #f9fafc;
-            padding: 30px;
-            border-radius: 14px;
-            border: 1px solid #ececec;
-        }
-        .feature p {
-            color: #555;
-            line-height: 1.6;
-        }
+/* ===== BUTTONS ===== */
 
-        footer {
-            background: #f7f7f7;
-            text-align: center;
-            padding: 60px 20px;
-            margin-top: 60px;
-        }
-        footer h2 {
-            font-size: 28px;
-            margin-bottom: 16px;
-            font-weight: 600;
-        }
-        footer h3 {
-            font-size: 20px;
-            margin-bottom: 12px;
-            font-weight: 500;
-        }
-        footer p {
-            color: #555;
-        }
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* было 24px */
+    flex-wrap: wrap;
+}
+
+.button {
+    background: #0d6efd;
+    color: white;
+    padding: 14px 28px; /* было 18px 40px */
+    border-radius: 12px; /* было 14px */
+    text-decoration: none;
+    font-size: 17px; /* было 20px */
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 12px; /* было 14px */
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12); /* чуть компактнее */
+    transition: transform 0.15s ease;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+}
+
+.button.secondary {
+    background: #10b981;
+}
+
+.button img {
+    height: 24px; /* было 28px */
+    width: 24px;
+}
+
+/* ===== SECTIONS ===== */
+
+.section {
+    padding: 60px 20px; /* было 80px 20px */
+    max-width: 1100px;
+    margin: auto;
+}
+
+.section h2 {
+    font-size: 26px; /* было 32px */
+    margin-bottom: 16px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.section h3 {
+    font-size: 18px; /* было 22px */
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+/* ===== FEATURES ===== */
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); /* было 280px */
+    gap: 24px; /* было 30px */
+    margin-top: 32px; /* было 40px */
+}
+
+.feature {
+    background: #f9fafc;
+    padding: 24px; /* было 30px */
+    border-radius: 12px; /* было 14px */
+    border: 1px solid #ececec;
+}
+
+.feature p {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.35; /* было 1.6 */
+}
+
+/* ===== FOOTER ===== */
+
+footer {
+    background: #f7f7f7;
+    text-align: center;
+    padding: 40px 20px; /* было 60px */
+    margin-top: 40px; /* было 60px */
+}
+
+footer h2 {
+    font-size: 24px; /* было 28px */
+    margin-bottom: 14px;
+    font-weight: 600;
+}
+
+footer h3 {
+    font-size: 18px; /* было 20px */
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+footer p {
+    color: #555;
+    font-size: 15px;
+}
     </style>
 
     <!-- Микроразметка Organization -->
