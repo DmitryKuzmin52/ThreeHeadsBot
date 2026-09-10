@@ -194,35 +194,78 @@
             font-size: 13px;
             color: #6b7280;
         }
-        .panel {
+        .panel-page {
             position: fixed;
             top: 0;
-            right: -400px;
-            width: 400px;
+            right: -100%;
+            width: 100%;
+            max-width: 700px;
             height: 100%;
             background: #ffffff;
-            box-shadow: -4px 0 20px rgba(0,0,0,0.1);
-            transition: right 0.3s ease;
+            box-shadow: -4px 0 24px rgba(0,0,0,0.12);
+            transition: right 0.35s ease;
             z-index: 9999;
-            padding: 20px;
+            padding: 40px;
+            overflow-y: auto;
+            border-left: 1px solid #e5e7eb;
         }
 
-        .panel.open {
+        .panel-page.open {
             right: 0;
         }
 
-        .panel-content {
-            font-family: Inter, sans-serif;
+        .panel-page-content {
+            max-width: 620px;
+            margin: 0 auto;
         }
 
-        .close-btn {
-            margin-top: 20px;
-            padding: 10px 16px;
-            background: #1d4ed8;
-            color: #fff;
+        .panel-page h2 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .panel-page p {
+            font-size: 16px;
+            color: #4b5563;
+            line-height: 1.6;
+            margin-bottom: 16px;
+        }
+
+        .panel-page ul {
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+
+        .panel-page li {
+            font-size: 15px;
+            color: #374151;
+            margin-bottom: 6px;
+        }
+
+        .panel-link {
+            display: inline-block;
+            font-size: 16px;
+            font-weight: 600;
+            color: #1d4ed8;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+
+        .panel-link:hover {
+            text-decoration: underline;
+        }
+
+        .panel-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: transparent;
             border: none;
-            border-radius: 8px;
+            font-size: 32px;
+            line-height: 1;
             cursor: pointer;
+            color: #6b7280;
         }
 
         @media (max-width: 900px) {
@@ -303,18 +346,36 @@
         </p>
 </footer>
 
-<div id="panel-how-it-works" class="panel">
-    <div class="panel-content">
+<div id="panel-how-it-works" class="panel-page">
+    <div class="panel-page-content">
+
+        <button class="panel-close" onclick="closePanel()">×</button>
+
         <h2>Как работает бот</h2>
 
-        <p>
-            Подробное описание работы бота доступно на отдельной странице:<br>
-            <a href="/how-it-works.html" class="panel-link">Открыть страницу «Как работает бот»</a>
-        </p>
+        <p>Бот — это умный конструктор юридических документов, составленных специально для страховых случаев ОСАГО и КАСКО.</p>
 
-        <button class="close-btn" onclick="closePanel()">Закрыть</button>
+        <p>Он помогает быстро подобрать:</p>
+        <ul>
+            <li>заявления</li>
+            <li>уведомления</li>
+            <li>акты</li>
+            <li>запросы</li>
+            <li>претензии</li>
+            <li>жалобы в ЦБ РФ</li>
+            <li>обращения к финансовому уполномоченному</li>
+            <li>исковые заявления</li>
+        </ul>
+
+        <p>Полная версия доступна на отдельной странице:</p>
+
+        <a href="/how-it-works.html" class="panel-link">
+            Открыть SEO‑страницу →
+        </a>
+
     </div>
 </div>
+
 
 <script>
 function openPanel(id) {
