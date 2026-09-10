@@ -195,15 +195,6 @@
             color: #6b7280;
         }
 
-        .panel-overlay {
-            position: fixed;
-            inset: 0;
-            background: rgba(0,0,0,0.45);
-            opacity: 0;
-            pointer-events: none;
-            transition: opacity 0.3s ease;
-        }
-
         .panel-page {
             position: fixed;
             top: 0;
@@ -276,11 +267,6 @@
 
         .panel-page.open {
             right: 0;
-        }
-
-        .panel-page.open .panel-overlay {
-            opacity: 1;
-            pointer-events: auto;
         }
 
         @media (max-width: 600px) {
@@ -362,8 +348,6 @@
 </footer>
 
 <div id="panel-how-it-works" class="panel-page">
-    <div class="panel-overlay" onclick="closePanel()"></div>
-
     <div class="panel-page-content">
         <button class="panel-close" onclick="closePanel()">×</button>
         
@@ -400,7 +384,19 @@ function openPanel(id) {
 function closePanel() {
     const panel = document.querySelector('.panel-page.open');
     if (panel) panel.classList.remove('open');
+    
 }
+document.addEventListener('click', function(e) {
+    const panel = document.querySelector('.panel-page');
+    const isOpen = panel.classList.contains('open');
+
+    if (!isOpen) return;
+
+    const clickedInside = panel.contains(e.target);
+    if (!clickedInside) {
+        panel.classList.remove('open');
+    }
+});
 </script>
     
 </body>
