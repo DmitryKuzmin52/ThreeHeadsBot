@@ -194,6 +194,16 @@
             font-size: 13px;
             color: #6b7280;
         }
+
+        .panel-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.45);
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+
         .panel-page {
             position: fixed;
             top: 0;
@@ -205,18 +215,26 @@
             box-shadow: -4px 0 24px rgba(0,0,0,0.12);
             transition: right 0.35s ease;
             z-index: 9999;
-            padding: 40px;
-            overflow-y: auto;
-            border-left: 1px solid #e5e7eb;
-        }
-
-        .panel-page.open {
-            right: 0;
+            display: flex;
         }
 
         .panel-page-content {
-            max-width: 620px;
-            margin: 0 auto;
+            padding: 40px;
+            overflow-y: auto;
+            width: 100%;
+            position: relative;
+        }
+
+        .panel-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: transparent;
+            border: none;
+            font-size: 32px;
+            line-height: 1;
+            cursor: pointer;
+            color: #6b7280;
         }
 
         .panel-page h2 {
@@ -256,32 +274,29 @@
             text-decoration: underline;
         }
 
-        .panel-close {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            background: transparent;
-            border: none;
-            font-size: 32px;
-            line-height: 1;
-            cursor: pointer;
-            color: #6b7280;
+        .panel-page.open {
+            right: 0;
         }
 
-        @media (max-width: 900px) {
-            .layout {
-                grid-template-columns: 1fr;
+        .panel-page.open .panel-overlay {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        @media (max-width: 600px) {
+            .panel-page-content {
+                padding: 24px;
             }
 
-            .sidebar {
-                order: 2;
+            .panel-page h2 {
+                font-size: 22px;
             }
 
-            .hero {
-                order: 1;
+            .panel-close {
+                font-size: 28px;
             }
-            
-                }
+        }
+
     </style>
 </head>
 <body>
@@ -347,10 +362,11 @@
 </footer>
 
 <div id="panel-how-it-works" class="panel-page">
+    <div class="panel-overlay" onclick="closePanel()"></div>
+
     <div class="panel-page-content">
-
         <button class="panel-close" onclick="closePanel()">×</button>
-
+        
         <h2>Как работает бот</h2>
 
         <p>Бот — это умный конструктор юридических документов, составленных специально для страховых случаев ОСАГО и КАСКО.</p>
@@ -377,11 +393,13 @@
 
 <script>
 function openPanel(id) {
-    document.getElementById('panel-' + id).classList.add('open');
+    const panel = document.getElementById('panel-' + id);
+    panel.classList.add('open');
 }
 
 function closePanel() {
-    document.querySelector('.panel.open').classList.remove('open');
+    const panel = document.querySelector('.panel-page.open');
+    if (panel) panel.classList.remove('open');
 }
 </script>
     
