@@ -395,22 +395,27 @@
 <script>
 function openPanel(id) {
     const panel = document.getElementById('panel-' + id);
-    panel.classList.add('open');
+    if (panel) {
+        panel.classList.add('open');
+    }
 }
 
 function closePanel() {
     const panel = document.querySelector('.panel-page.open');
-    if (panel) panel.classList.remove('open');
-    
+    if (panel) {
+        panel.classList.remove('open');
+    }
 }
-document.addEventListener('click', function(e) {
-    const panel = document.querySelector('.panel-page');
-    const isOpen = panel.classList.contains('open');
 
-    if (!isOpen) return;
+document.addEventListener('click', function(e) {
+    const panel = document.querySelector('.panel-page.open');
+    if (!panel) return;
 
     const clickedInside = panel.contains(e.target);
-    if (!clickedInside) {
+
+    const clickedOpenButton = e.target.closest('[onclick^="openPanel"]');
+
+    if (!clickedInside && !clickedOpenButton) {
         panel.classList.remove('open');
     }
 });
