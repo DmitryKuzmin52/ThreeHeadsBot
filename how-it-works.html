@@ -10,15 +10,15 @@
         body {
             margin: 0;
             font-family: 'Inter', Arial, sans-serif;
-            background: #0f172a; /* глубокий тёмный фон */
-            color: #e2e8f0; /* светлый текст */
+            background: #f9fafb;
+            color: #111827;
         }
 
-        /* Шапка */
+        /* Компактная шапка */
         header {
-            background: #1e293b;
-            border-bottom: 1px solid #334155;
-            padding: 16px 24px;
+            background: #ffffff;
+            border-bottom: 1px solid #e5e7eb;
+            padding: 12px 20px;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -27,28 +27,28 @@
         .header-left {
             display: flex;
             align-items: center;
-            gap: 14px;
+            gap: 10px;
         }
 
         header img {
-            height: 42px;
+            height: 34px;
             width: auto;
         }
 
         header h1 {
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 600;
             margin: 0;
-            color: #f1f5f9;
+            color: #111827;
         }
 
         .back-btn {
             background: #1d4ed8;
             color: #fff;
-            padding: 8px 14px;
-            border-radius: 8px;
+            padding: 6px 12px;
+            border-radius: 6px;
             text-decoration: none;
-            font-size: 14px;
+            font-size: 13px;
             font-weight: 600;
         }
 
@@ -60,70 +60,52 @@
         .container {
             max-width: 900px;
             margin: 0 auto;
-            padding: 40px 20px;
+            padding: 24px 16px;
         }
 
         h2 {
-            font-size: 22px;
+            font-size: 18px;
             font-weight: 600;
-            margin-top: 32px;
-            margin-bottom: 12px;
-            color: #f8fafc;
+            margin-top: 24px;
+            margin-bottom: 10px;
+            color: #111827;
         }
 
         p {
-            font-size: 16px;
-            color: #cbd5e1;
-            line-height: 1.6;
-            margin-bottom: 16px;
+            font-size: 14px;
+            color: #4b5563;
+            line-height: 1.45;
+            margin-bottom: 12px;
         }
 
         ul {
-            padding-left: 20px;
-            margin-bottom: 20px;
+            padding-left: 18px;
+            margin-bottom: 14px;
         }
 
         li {
-            font-size: 16px;
-            color: #cbd5e1;
-            margin-bottom: 6px;
+            font-size: 14px;
+            color: #374151;
+            margin-bottom: 4px;
         }
 
         .block {
-            background: #1e293b;
-            border: 1px solid #334155;
-            border-radius: 12px;
-            padding: 24px 28px;
-            margin-bottom: 24px;
-        }
-
-        /* Кнопка открыть бота */
-        .open-bot-btn {
-            display: inline-block;
-            background: #1d4ed8;
-            color: #fff;
-            padding: 12px 22px;
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
             border-radius: 10px;
-            font-size: 16px;
-            font-weight: 600;
-            text-decoration: none;
-            margin-top: 10px;
-            box-shadow: 0 8px 20px rgba(29, 78, 216, 0.35);
-        }
-
-        .open-bot-btn:hover {
-            background: #1e40af;
+            padding: 18px 20px;
+            margin-bottom: 18px;
         }
 
         .footer {
             text-align: center;
-            padding: 20px;
-            font-size: 13px;
-            color: #94a3b8;
+            padding: 16px;
+            font-size: 12px;
+            color: #6b7280;
         }
 
         a {
-            color: #60a5fa;
+            color: #1d4ed8;
             text-decoration: none;
         }
 
@@ -136,7 +118,7 @@
             header {
                 flex-direction: column;
                 align-items: flex-start;
-                gap: 12px;
+                gap: 10px;
             }
 
             .back-btn {
@@ -145,7 +127,7 @@
             }
 
             header h1 {
-                font-size: 16px;
+                font-size: 15px;
             }
         }
     </style>
@@ -167,12 +149,10 @@
     <h2>Что делает бот</h2>
     <div class="block">
         <p>
-            Бот — это умный конструктор юридических документов, созданный специально для страховых случаев ОСАГО и КАСКО. 
-            Он помогает быстро подобрать заявления, уведомления, акты, запросы, претензии, жалобы в ЦБ РФ, обращения к финансовому уполномоченному и исковые заявления.
-            Сервис полностью автоматизирует процесс оформления документов, экономит время и исключает ошибки.
+            Бот — это конструктор юридических документов для страховых случаев ОСАГО и КАСКО. 
+            Он помогает подобрать заявления, уведомления, акты, запросы, претензии, жалобы в ЦБ РФ, обращения к финансовому уполномоченному и исковые заявления.
+            Сервис автоматизирует оформление документов и снижает вероятность ошибок.
         </p>
-
-        <a href="https://t.me/ThreeHeadsBot" class="open-bot-btn">Открыть бота →</a>
     </div>
 
     <h2>1. Переход в бот</h2>
@@ -182,22 +162,21 @@
             <li>Telegram</li>
             <li>MAX</li>
         </ul>
-        <p>Бот работает без регистрации и не запрашивает персональные данные.</p>
+        <p>Регистрация не требуется.</p>
     </div>
 
     <h2>2. Выбор типа страхового случая</h2>
     <div class="block">
-        <p>В главном меню пользователь выбирает направление:</p>
+        <p>В меню выбирается направление:</p>
         <ul>
             <li>ОСАГО</li>
             <li>КАСКО</li>
         </ul>
-        <p>Это позволяет сразу перейти к нужному юридическому сценарию.</p>
     </div>
 
-    <h2>3. Определение стадии взаимодействия со страховой</h2>
+    <h2>3. Определение стадии взаимодействия</h2>
     <div class="block">
-        <p>Бот предлагает разделы под разные этапы работы со страховой компанией:</p>
+        <p>Бот предлагает разделы под разные этапы работы со страховой:</p>
         <ul>
             <li>Первичные заявления</li>
             <li>Уведомления</li>
@@ -205,42 +184,39 @@
             <li>Акты</li>
             <li>Претензии</li>
             <li>Жалоба в ЦБ РФ</li>
-            <li>Обращение к финансовому уполномоченному</li>
+            <li>Финансовый уполномоченный</li>
             <li>Исковое заявление</li>
         </ul>
-        <p>Каждый раздел содержит точные шаблоны под конкретную ситуацию со ссылками на законы.</p>
     </div>
 
     <h2>4. Предпросмотр документа</h2>
     <div class="block">
-        <p>Каждый шаблон можно просмотреть заранее — пользователь видит структуру, содержание, юридические формулировки и ссылки на законы.</p>
+        <p>Каждый шаблон можно просмотреть заранее — видна структура и формулировки.</p>
     </div>
 
     <h2>5. Оплата через Robokassa</h2>
     <div class="block">
-        <p>После выбора документа пользователь оплачивает его через Robokassa:</p>
+        <p>Оплата доступна через:</p>
         <ul>
-            <li>банковская карта</li>
+            <li>банковскую карту</li>
             <li>СБП</li>
         </ul>
-        <p>Оплата проходит быстро и безопасно.</p>
     </div>
 
-    <h2>6. Получение готового Word‑документа</h2>
+    <h2>6. Получение Word‑документа</h2>
     <div class="block">
-        <p>После оплаты бот отправляет файл Word (.docx) с удобными фреймспейсами для заполнения:</p>
+        <p>После оплаты бот отправляет файл Word (.docx) с полями для заполнения:</p>
         <ul>
             <li>личные данные</li>
-            <li>данные страховой компании</li>
+            <li>данные страховой</li>
             <li>данные автомобиля</li>
-            <li>обстоятельства происшествия</li>
+            <li>обстоятельства ДТП</li>
         </ul>
-        <p>Документ можно сразу распечатать или отправить в страховую.</p>
     </div>
 
     <h2>7. Безопасность данных</h2>
     <div class="block">
-        <p>Бот не собирает и не хранит персональные данные. Пользователь самостоятельно заполняет документ — конфиденциальность полностью сохраняется.</p>
+        <p>Бот не хранит персональные данные — пользователь заполняет документ самостоятельно.</p>
     </div>
 
 </div>
