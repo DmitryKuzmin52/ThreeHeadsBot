@@ -194,6 +194,36 @@
             font-size: 13px;
             color: #6b7280;
         }
+        .panel {
+            position: fixed;
+            top: 0;
+            right: -400px;
+            width: 400px;
+            height: 100%;
+            background: #ffffff;
+            box-shadow: -4px 0 20px rgba(0,0,0,0.1);
+            transition: right 0.3s ease;
+            z-index: 9999;
+            padding: 20px;
+        }
+
+        .panel.open {
+            right: 0;
+        }
+
+        .panel-content {
+            font-family: Inter, sans-serif;
+        }
+
+        .close-btn {
+            margin-top: 20px;
+            padding: 10px 16px;
+            background: #1d4ed8;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
 
         @media (max-width: 900px) {
             .layout {
@@ -208,37 +238,7 @@
                 order: 1;
             }
             
-        .panel {
-        position: fixed;
-        top: 0;
-        right: -400px;
-        width: 400px;
-        height: 100%;
-        background: #ffffff;
-        box-shadow: -4px 0 20px rgba(0,0,0,0.1);
-        transition: right 0.3s ease;
-        z-index: 9999;
-        padding: 20px;
-    }
-
-    .panel.open {
-        right: 0;
-    }
-
-    .panel-content {
-        font-family: Inter, sans-serif;
-    }
-
-    .close-btn {
-        margin-top: 20px;
-        padding: 10px 16px;
-        background: #1d4ed8;
-        color: #fff;
-        border: none;
-        border-radius: 8px;
-        cursor: pointer;
-    }
-        }
+                }
     </style>
 </head>
 <body>
@@ -306,7 +306,7 @@
 <div id="panel-how-it-works" class="panel">
     <div class="panel-content">
         <h2>Как работает бот</h2>
-        <p>Здесь будет текст панели. Можно вставить краткое описание или ссылку на подробную страницу.</p>
+        <p>how-it-works.html</p>
         <button class="close-btn" onclick="closePanel()">Закрыть</button>
     </div>
 </div>
