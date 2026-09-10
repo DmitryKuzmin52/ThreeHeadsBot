@@ -198,20 +198,25 @@
         .panel-page {
             position: fixed;
             top: 0;
-            right: -100%;
+            right: -520px; /* панель скрыта */
             width: 100%;
-            max-width: 520px;
+            max-width: 520px; /* компактная ширина */
             height: 100%;
             background: #ffffff;
+            border-left: 1px solid #e5e7eb;
             box-shadow: -4px 0 18px rgba(0,0,0,0.12);
             transition: right 0.35s ease;
             z-index: 9999;
             display: flex;
+            overflow-y: auto;
+        }
+        
+        .panel-page.open {
+            right: 0;
         }
 
         .panel-page-content {
             padding: 28px;
-            overflow-y: auto;
             width: 100%;
             position: relative;
         }
@@ -229,20 +234,20 @@
         }
 
         .panel-page h2 {
-            font-size: 28px;
+            font-size: 26px;
             font-weight: 700;
-            margin-bottom: 20px;
+            margin-bottom: 18px;
         }
 
         .panel-page p {
-            font-size: 16px;
+            font-size: 15px;
             color: #4b5563;
-            line-height: 1.6;
-            margin-bottom: 16px;
+            line-height: 1.55;
+            margin-bottom: 14px;
         }
 
         .panel-page ul {
-            margin-bottom: 20px;
+            margin-bottom: 18px;
             padding-left: 20px;
         }
 
@@ -254,35 +259,46 @@
 
         .panel-link {
             display: inline-block;
-            font-size: 16px;
+            font-size: 15px;
             font-weight: 600;
             color: #1d4ed8;
             text-decoration: none;
-            margin-top: 10px;
+            margin-top: 8px;
         }
 
         .panel-link:hover {
             text-decoration: underline;
         }
 
-        .panel-page.open {
-            right: 0;
-        }
-
         @media (max-width: 600px) {
-        .panel-page {
-            max-width: 85%;
-        }
+            .panel-page {
+                max-width: 85%;     
+                right: -85%;        
+            }
 
-        .panel-page-content {
-            padding: 20px;
-        }
+            .panel-page.open {
+                right: 0;         
+            }
 
-        .panel-close {
-            top: 12px;
-            right: 12px;
-            font-size: 26px;
-        }
+            .panel-page-content {
+                padding: 20px;     
+            }
+
+            .panel-close {
+                top: 12px;
+                right: 12px;
+                font-size: 26px;
+            }
+
+            .panel-page h2 {
+                font-size: 22px;
+                margin-bottom: 14px;
+            }
+
+            .panel-page p,
+            .panel-page li {
+                font-size: 14px;
+            }
     }
     </style>
 </head>
