@@ -360,15 +360,25 @@
     <aside class="sidebar">
         <h2>Навигация</h2>
         <ul>
-            <li><button>Инструкция после ДТП</button></li>
-            <li><button>Какие документы доступны</button></li>
+            <li>
+                <button onclick="openPanel('after-dtp')">Инструкция после ДТП</button>
+                <a href="/after-dtp.html" style="display:none;">Инструкция после ДТП</a>
+            </li>
+
+            <li>
+                <button onclick="openPanel('documents')">Какие документы доступны</button>
+                <a href="/documents.html" style="display:none;">Какие документы доступны</a>    
+            </li>
             
             <li>
                 <button onclick="openPanel('how-it-works')">Как работает бот</button>
                 <a href="/how-it-works.html" style="display:none;">Как работает бот</a>
             </li>
             
-            <li><button>Частые вопросы</button></li>
+            <li>
+                <button onclick="openPanel('faq')">Частые вопросы</button>
+                <a href="/faq.html" style="display:none;">Частые вопросы</a>        
+            </li>
         </ul>
     </aside>
 
@@ -410,6 +420,55 @@
         </p>
 </footer>
 
+<div id="panel-after-dtp" class="panel-page">
+    <div class="panel-page-content">
+        <button class="panel-close" onclick="closePanel()">×</button>
+
+        <h2>Инструкция после ДТП</h2>
+
+        <p>Эта инструкция помогает правильно оформить ДТП и подготовить документы для страховой компании.</p>
+
+        <ul>
+            <li>зафиксировать место ДТП</li>
+            <li>вызвать ГИБДД или оформить европротокол</li>
+            <li>получить необходимые документы от инспектора</li>
+            <li>уведомить страховую компанию</li>
+            <li>подготовить заявление и пакет документов</li>
+        </ul>
+
+        <a href="/after-dtp.html" class="panel-link">
+            Открыть полную инструкцию →
+        </a>
+        
+    </div>
+</div>
+
+<div id="panel-documents" class="panel-page">
+    <div class="panel-page-content">
+        <button class="panel-close" onclick="closePanel()">×</button>
+
+        <h2>Какие документы доступны</h2>
+
+        <p>Бот подбирает юридические документы под конкретный страховой случай ОСАГО или КАСКО.</p>
+
+        <ul>
+            <li>заявления</li>
+            <li>уведомления</li>
+            <li>акты</li>
+            <li>запросы</li>
+            <li>претензии</li>
+            <li>жалобы в ЦБ РФ</li>
+            <li>обращения к финансовому уполномоченному</li>
+            <li>исковые заявления</li>
+        </ul>
+
+        <a href="/documents.html" class="panel-link">
+            Полный список документов →
+        </a>
+        
+    </div>
+</div>
+
 <div id="panel-how-it-works" class="panel-page">
     <div class="panel-page-content">
         <button class="panel-close" onclick="closePanel()">×</button>
@@ -434,6 +493,29 @@
             Открыть полное описание работы Бота →
         </a>
 
+    </div>
+</div>
+
+<div id="panel-faq" class="panel-page">
+    <div class="panel-page-content">
+        <button class="panel-close" onclick="closePanel()">×</button>
+
+        <h2>Частые вопросы</h2>
+
+        <p>Ответы на самые частые вопросы по оформлению документов и работе сервиса.</p>
+
+        <ul>
+            <li>как работает бот</li>
+            <li>какие документы нужны для страховой</li>
+            <li>как происходит оплата</li>
+            <li>как получить готовый документ</li>
+            <li>какие данные нужно заполнить</li>
+        </ul>
+
+        <a href="/faq.html" class="panel-link">
+            Смотреть все вопросы →
+        </a>
+        
     </div>
 </div>
 
