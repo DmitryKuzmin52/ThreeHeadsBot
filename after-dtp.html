@@ -1,1 +1,292 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>ДТП: что делать — ThreeHeadsBot</title>
+    <meta name="description" content="Что делать при ДТП: инструкция для водителей с ОСАГО и КАСКО.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Inter', Arial, sans-serif;
+            background: #f9fafb;
+            color: #111827;
+        }
+
+        header {
+            background: #ffffff;
+            border-bottom: 1px solid #e5e7eb;
+            padding: 12px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        header img {
+            height: 34px;
+            width: auto;
+        }
+
+        header h1 {
+            font-size: 16px;
+            font-weight: 600;
+            margin: 0;
+            color: #111827;
+        }
+
+        .back-btn {
+            background: #1d4ed8;
+            color: #fff;
+            padding: 6px 12px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .back-btn:hover {
+            background: #1e40af;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 10px 12px;
+        }
+
+        h2 {
+            font-size: 14px;
+            font-weight: 600;
+            margin: 12px 0 4px 0;
+            color: #111827;
+        }
+
+        p {
+            font-size: 12px;
+            color: #4b5563;
+            line-height: 1.28;
+            margin: 4px 0;
+        }
+
+        ul {
+            padding-left: 14px;
+            margin: 4px 0 8px 0;
+        }
+
+        li {
+            font-size: 12px;
+            color: #374151;
+            margin-bottom: 3px;
+        }
+
+        .block {
+            background: none;
+            border: none;
+            padding: 0;
+            margin: 0 0 8px 0;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 16px;
+            font-size: 12px;
+            color: #6b7280;
+        }
+
+        a {
+            color: #1d4ed8;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 8px 8px;
+            }
+
+            h2 {
+                font-size: 13px;
+                margin: 10px 0 4px 0;
+            }
+
+            p, li {
+                font-size: 11px;
+                line-height: 1.25;
+            }
+
+            header {
+                padding: 6px 10px;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 4px;
+            }
+
+            header img {
+                height: 20px;
+            }
+
+            header h1 {
+                font-size: 12px;
+            }
+
+            .back-btn {
+                width: 100%;
+                text-align: center;
+                padding: 4px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="header-left">
+        <img src="/logo.png" alt="ThreeHeadsBot">
+        <h1>ДТП: что делать</h1>
+    </div>
+
+    <a href="/" class="back-btn">← Назад</a>
+</header>
+
+<div class="container">
+
+    <h2>1. Первые действия на месте ДТП</h2>
+    <div class="block">
+        <p>• Остановите автомобиль, включите аварийную сигнализацию.</p>
+        <p>• Поставьте знак аварийной остановки (15 м в городе, 30 м за городом).</p>
+        <p>• Не перемещайте автомобиль до фиксации обстоятельств.</p>
+        <p>• Сделайте фото: общий план, номера, повреждения, дорожные знаки.</p>
+        <p>• Если есть пострадавшие — звоните 112.</p>
+    </div>
+
+    <h2>2. ГИБДД или европротокол</h2>
+    <div class="block">
+        <p><strong>Вызывайте ГИБДД, если:</strong></p>
+        <ul>
+            <li>есть пострадавшие;</li>
+            <li>спор о виновности;</li>
+            <li>ущерб превышает 100 000 ₽;</li>
+            <li>повреждена инфраструктура;</li>
+            <li>у кого‑то нет ОСАГО.</li>
+        </ul>
+
+        <p><strong>Европротокол возможен, если:</strong></p>
+        <ul>
+            <li>в ДТП участвуют только два автомобиля;</li>
+            <li>у обоих водителей есть ОСАГО;</li>
+            <li>нет пострадавших;</li>
+            <li>ущерб ≤ 400 000 ₽ (до 500 000 ₽ в Москве/СПб).</li>
+        </ul>
+    </div>
+
+    <h2>3. Как работают ОСАГО и КАСКО вместе</h2>
+    <div class="block">
+        <p><strong>Если вы виновник:</strong></p>
+        <ul>
+            <li>ОСАГО покрывает ущерб пострадавшему;</li>
+            <li>КАСКО покрывает ремонт вашего автомобиля.</li>
+        </ul>
+
+        <p><strong>Если виновник другой водитель:</strong></p>
+        <ul>
+            <li>Ремонт вашего авто по ОСАГО виновника;</li>
+            <li>Если ущерб выше лимита — доплата по вашему КАСКО.</li>
+        </ul>
+
+        <p><strong>Если ДТП без второго авто:</strong></p>
+        <ul>
+            <li>ОСАГО не применяется;</li>
+            <li>КАСКО покрывает, если случай предусмотрен договором.</li>
+        </ul>
+    </div>
+
+    <h2>4. Сроки обращения</h2>
+    <div class="block">
+        <p>• Подать заявление в страховую: до 5 рабочих дней.</p>
+        <p>• Выплата или направление на ремонт: до 20 дней после подачи документов.</p>
+    </div>
+
+    <h2>5. Необходимые документы</h2>
+    <div class="block">
+        <ul>
+            <li>Извещение о ДТП или материалы ГИБДД;</li>
+            <li>ПТС/СТС, водительское удостоверение;</li>
+            <li>Полисы ОСАГО и КАСКО;</li>
+            <li>Фото и видео с места происшествия;</li>
+            <li>Заявление на страховое возмещение.</li>
+        </ul>
+    </div>
+
+    <h2>6. Лимиты выплат по ОСАГО</h2>
+    <div class="block">
+        <ul>
+            <li>Ущерб имуществу — до 400 000 ₽;</li>
+            <li>Ущерб здоровью — до 500 000 ₽;</li>
+            <li>Европротокол — 100 000–400 000 ₽.</li>
+        </ul>
+    </div>
+
+    <h2>7. Частые ошибки</h2>
+    <div class="block">
+        <ul>
+            <li>Уезд с места ДТП;</li>
+            <li>Отсутствие вызова ГИБДД, когда он обязателен;</li>
+            <li>Плохая фотофиксация;</li>
+            <li>Пропуск сроков подачи заявления;</li>
+            <li>Признание вины устно без оформления.</li>
+        </ul>
+    </div>
+
+    <h2>8. Лимиты выплат по европротоколу</h2>
+    <div class="block">
+        <p>Размер страхового возмещения зависит от способа оформления ДТП и наличия разногласий:</p>
+
+        <ul>
+            <li>Нет разногласий, ДТП зафиксировано через приложение («Госуслуги Авто», «Помощник ОСАГО») — <strong>до 400 000 ₽</strong></li>
+            <li>Есть разногласия, ДТП зафиксировано через приложение — <strong>до 200 000 ₽</strong> (с 5 июля 2025 года)</li>
+            <li>Нет разногласий, европротокол оформлен только на бумаге — <strong>до 100 000 ₽</strong></li>
+            <li>Есть разногласия, европротокол оформлен на бумаге — <strong>до 100 000 ₽</strong></li>
+        </ul>
+    </div>
+
+    <h2>9. Важные нюансы европротокола</h2>
+    <div class="block">
+        <p><strong>Условия применения:</strong></p>
+        <ul>
+            <li>в ДТП участвуют только два транспортных средства;</li>
+            <li>нет пострадавших;</li>
+            <li>вред причинён только имуществу;</li>
+            <li>у обоих водителей есть действующие полисы ОСАГО;</li>
+            <li>участники согласны оформить аварию без ГИБДД.</li>
+        </ul>
+
+        <p><strong>Что нельзя делать после оформления:</strong></p>
+        <p>В течение 15 календарных дней нельзя ремонтировать или утилизировать автомобиль без письменного согласия страховой.</p>
+
+        <p><strong>Если ущерб превышает лимит:</strong></p>
+        <p>Разницу можно взыскать с виновника ДТП через суд — потребуется независимая оценка.</p>
+
+        <p><strong>Оспаривание:</strong></p>
+        <p>Если после подписания европротокола вы поняли, что не согласны с обстоятельствами, оспаривание возможно только через ГИБДД или суд при наличии доказательств.</p>
+    </div>
+
+</div>
+
+<div class="footer">
+    © ThreeHeadsBot — юридические документы для ОСАГО и КАСКО после ДТП
+</div>
+
+</body>
+</html>
 
