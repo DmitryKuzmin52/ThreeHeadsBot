@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Новости — ThreeHeadsBot</title>
+    <meta name="description" content="Новости сервиса ThreeHeadsBot: обновления, новые документы, изменения в ОСАГО и КАСКО.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Inter', Arial, sans-serif;
+            background: #f9fafb;
+            color: #111827;
+        }
+
+        header {
+            background: #ffffff;
+            border-bottom: 1px solid #e5e7eb;
+            padding: 12px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        header img {
+            height: 34px;
+            width: auto;
+        }
+
+        header h1 {
+            font-size: 16px;
+            font-weight: 600;
+            margin: 0;
+            color: #111827;
+        }
+
+        .back-btn {
+            background: #1d4ed8;
+            color: #fff;
+            padding: 6px 12px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .back-btn:hover {
+            background: #1e40af;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 10px 12px;
+        }
+
+        h2 {
+            font-size: 14px;
+            font-weight: 600;
+            margin: 12px 0 4px 0;
+            color: #111827;
+        }
+
+        p {
+            font-size: 12px;
+            color: #4b5563;
+            line-height: 1.28;
+            margin: 4px 0;
+        }
+
+        .news-item {
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 12px;
+        }
+
+        .news-date {
+            font-size: 11px;
+            color: #6b7280;
+            margin-bottom: 4px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 16px;
+            font-size: 12px;
+            color: #6b7280;
+        }
+
+        /* Невидимый SEO‑блок */
+        .seo-block {
+            opacity: 0;
+            height: 0;
+            overflow: hidden;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 8px 8px;
+            }
+
+            h2 {
+                font-size: 13px;
+                margin: 10px 0 4px 0;
+            }
+
+            p {
+                font-size: 11px;
+                line-height: 1.25;
+            }
+
+            header {
+                padding: 6px 10px;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 4px;
+            }
+
+            header img {
+                height: 20px;
+            }
+
+            header h1 {
+                font-size: 12px;
+            }
+
+            .back-btn {
+                width: 100%;
+                text-align: center;
+                padding: 4px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="header-left">
+        <img src="/logo.png" alt="ThreeHeadsBot">
+        <h1>Новости сервиса</h1>
+    </div>
+
+    <a href="/" class="back-btn">← Назад</a>
+</header>
+
+<!-- Невидимый SEO‑блок -->
+<div class="seo-block">
+    <h2>Новости ОСАГО и КАСКО</h2>
+    <p>
+        Новости сервиса ThreeHeadsBot включают обновления по страховым случаям ОСАГО и КАСКО,
+        изменения законодательства, новые документы для страховых компаний, улучшения конструктора
+        юридических документов и обновления по европротоколу.
+    </p>
+    <p>
+        Страница новостей помогает водителям следить за изменениями правил оформления ДТП,
+        лимитов выплат, требований страховых компаний и судебной практики по страховым спорам.
+    </p>
+</div>
+
+<div class="container">
+
+    <h2>Последние новости</h2>
+
+    <div class="news-item">
+        <div class="news-date">12 сентября 2026</div>
+        <p><strong>Добавлены новые шаблоны заявлений для КАСКО.</strong></p>
+        <p>Теперь бот автоматически подбирает документы для случаев повреждения автомобиля без второго участника ДТП — падение предметов, наезд на препятствие, повреждение животными.</p>
+    </div>
+
+    <div class="news-item">
+        <div class="news-date">5 сентября 2026</div>
+        <p><strong>Обновлены лимиты европротокола.</strong></p>
+        <p>Внесены изменения в лимиты выплат при оформлении ДТП через приложение «Госуслуги Авто» и «Помощник ОСАГО». Добавлены новые подсказки внутри бота.</p>
+    </div>
+
+    <div class="news-item">
+        <div class="news-date">28 августа 2026</div>
+        <p><strong>Улучшена логика подбора документов.</strong></p>
+        <p>Бот стал точнее определять тип страхового случая и автоматически предлагает документы для досудебного урегулирования.</p>
+    </div>
+
+    <div class="news-item">
+        <div class="news-date">15 августа 2026</div>
+        <p><strong>Добавлены документы для обращения к финансовому уполномоченному.</strong></p>
+        <p>Теперь можно сформировать полный пакет документов для подачи жалобы, включая заявление, описание обстоятельств и доказательства.</p>
+    </div>
+
+</div>
+
+<div class="footer">
+    © ThreeHeadsBot — юридические документы для ОСАГО и КАСКО после ДТП
+</div>
+
+</body>
+</html>
