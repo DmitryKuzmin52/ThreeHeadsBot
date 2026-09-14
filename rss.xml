@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+    <title>ThreeHeadsBot — Новости</title>
+    <link>https://threeheadsbot.ru/news.html</link>
+    <description>Новости сервиса ThreeHeadsBot: обновления ОСАГО, КАСКО, европротокола и юридических документов.</description>
+    <language>ru</language>
+
+    <item>
+        <title>Добавлены новые шаблоны заявлений для КАСКО</title>
+        <link>https://threeheadsbot.ru/news.html#kasco-templates</link>
+        <pubDate>Sat, 12 Sep 2026 12:00:00 +0300</pubDate>
+        <description>Теперь бот автоматически подбирает документы для случаев повреждения автомобиля без второго участника ДТП.</description>
+    </item>
+
+    <item>
+        <title>Обновлены лимиты европротокола</title>
+        <link>https://threeheadsbot.ru/news.html#eurolimits</link>
+        <pubDate>Sat, 05 Sep 2026 12:00:00 +0300</pubDate>
+        <description>Внесены изменения в лимиты выплат при оформлении ДТП через приложение «Госуслуги Авто».</description>
+    </item>
+
+    <item>
+        <title>Улучшена логика подбора документов</title>
+        <link>https://threeheadsbot.ru/news.html#logic-update</link>
+        <pubDate>Fri, 28 Aug 2026 12:00:00 +0300</pubDate>
+        <description>Бот стал точнее определять тип страхового случая и автоматически предлагает документы для досудебного урегулирования.</description>
+    </item>
+
+    <item>
+        <title>Добавлены документы для обращения к финансовому уполномоченному</title>
+        <link>https://threeheadsbot.ru/news.html#fin-upoln</link>
+        <pubDate>Thu, 15 Aug 2026 12:00:00 +0300</pubDate>
+        <description>Теперь можно сформировать полный пакет документов для подачи жалобы.</description>
+    </item>
+
+</channel>
+</rss>
