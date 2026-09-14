@@ -1,0 +1,25 @@
+name: Generate RSS
+
+on:
+  push:
+    paths:
+      - 'news.html'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Generate RSS
+        run: |
+          python3 generate_rss.py
+
+      - name: Commit RSS
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add rss.xml
+          git commit -m "Auto-update RSS" || echo "No changes"
+          git push
