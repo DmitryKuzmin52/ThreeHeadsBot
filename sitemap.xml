@@ -4,7 +4,7 @@
     <!-- Главная -->
     <url>
         <loc>https://threeheadsbot.ru/</loc>
-        <lastmod>2026-09-10</lastmod>
+        <lastmod>2026-09-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
@@ -12,43 +12,81 @@
     <!-- Оферта -->
     <url>
         <loc>https://threeheadsbot.ru/oferta.html</loc>
-        <lastmod>2026-09-10</lastmod>
+        <lastmod>2026-09-15</lastmod>
+        <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
 
     <!-- PDF оферты -->
     <url>
         <loc>https://threeheadsbot.ru/oferta_213001406917.pdf</loc>
-        <lastmod>2026-09-10</lastmod>
-        <priority>0.7</priority>
+        <lastmod>2026-09-15</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
     </url>
 
     <!-- Политика конфиденциальности -->
     <url>
         <loc>https://threeheadsbot.ru/privacy.html</loc>
-        <lastmod>2026-09-10</lastmod>
+        <lastmod>2026-09-15</lastmod>
+        <changefreq>yearly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <!-- Справка -->
     <url>
         <loc>https://threeheadsbot.ru/spravka.html</loc>
-        <lastmod>2026-09-10</lastmod>
+        <lastmod>2026-09-15</lastmod>
+        <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <!-- Новости -->
     <url>
         <loc>https://threeheadsbot.ru/news.html</loc>
-        <lastmod>2026-09-10</lastmod>
+        <lastmod>2026-09-15</lastmod>
+        <changefreq>daily</changefreq>
         <priority>0.7</priority>
     </url>
 
     <!-- Досудебное урегулирование -->
     <url>
         <loc>https://threeheadsbot.ru/dosudebnoe-uregulirovanie.html</loc>
-        <lastmod>2026-09-10</lastmod>
+        <lastmod>2026-09-15</lastmod>
+        <changefreq>monthly</changefreq>
         <priority>0.9</priority>
+    </url>
+
+    <!-- Инструкция после ДТП -->
+    <url>
+        <loc>https://threeheadsbot.ru/after-dtp.html</loc>
+        <lastmod>2026-09-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Документы -->
+    <url>
+        <loc>https://threeheadsbot.ru/documents.html</loc>
+        <lastmod>2026-09-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Как это работает -->
+    <url>
+        <loc>https://threeheadsbot.ru/how-it-works.html</loc>
+        <lastmod>2026-09-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- FAQ -->
+    <url>
+        <loc>https://threeheadsbot.ru/faq.html</loc>
+        <lastmod>2026-09-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
     </url>
 
 </urlset>
