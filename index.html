@@ -365,6 +365,28 @@
             font-size: 14px;
             text-align: center;
         }
+
+        /* === ФИКС: 5 преимуществ в одну строку на ПК === */
+
+        .why-line {
+            display: grid !important;
+            grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+            gap: 12px !important;
+            width: 100% !important;
+            margin-top: 14px !important;
+            align-items: center !important;
+        }
+
+        .why-line .why-pill {
+            width: auto !important;
+            max-width: none !important;
+            margin: 0 !important;
+            padding: 10px 6px !important;
+            box-sizing: border-box !important;
+            text-align: center !important;
+            position: static !important;
+            transform: none !important;
+        }
         
         @media (max-width: 600px) {
 
