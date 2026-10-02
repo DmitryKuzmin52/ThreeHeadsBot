@@ -332,47 +332,40 @@
         }
 
        
-        .why-section {
-            margin-top: 24px;
+        .why-line {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 12px;
+ 
+            margin-top: 20px;
+            padding-bottom: 6px;
+ 
+            overflow-x: auto;
+            overflow-y: hidden;
+ 
+            scrollbar-width: none;
+            -ms-overflow-style: none;
         }
-
-        .why-section h2 {
-            font-size: 22px;
-            font-weight: 700;
-            margin-bottom: 16px;
-            color: #111827;
+ 
+        .why-line::-webkit-scrollbar {
+            display: none;
         }
-
-        .why-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 16px;
-        }
-
-        .why-card {
+ 
+        .why-pill {
+            flex-shrink: 0;
+ 
+            padding: 10px 16px;
+ 
             background: #ffffff;
             border: 1px solid #e5e7eb;
-            border-radius: 12px;
-            padding: 20px;
-        }
-
-        .why-card-icon {
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-
-        .why-card h3 {
-            margin: 0 0 8px;
-            font-size: 16px;
-            font-weight: 600;
-            color: #111827;
-        }
-
-        .why-card p {
-            margin: 0;
+            border-radius: 999px;
+ 
+            color: #374151;
             font-size: 14px;
-            line-height: 1.5;
-            color: #4b5563;
+            font-weight: 500;
+ 
+            white-space: nowrap;
         }
 
         @media (max-width: 600px) {
@@ -450,6 +443,16 @@
             header h1 {
                 font-size: 12px !important;
             }
+
+            .why-line {
+                gap: 8px;
+                margin-top: 14px;
+            }
+ 
+            .why-pill {
+                padding: 8px 12px;
+                font-size: 12px;
+            }
         }
     </style>
 </head>
@@ -512,57 +515,12 @@
 
     <h2>Почему выбирают ThreeHeadsBot?</h2>
 
-    <div class="why-grid">
-
-        <div class="why-card">
-            <div class="why-card-icon">⚡</div>
-            <h3>Быстро</h3>
-            <p>
-                Готовые заявления, претензии и другие документы
-                формируются за несколько минут.
-            </p>
-        </div>
-
-        <div class="why-card">
-            <div class="why-card-icon">⚖️</div>
-            <h3>Профессионально</h3>
-            <p>
-                Все шаблоны разработаны практикующим юристом
-                с опытом ведения споров по ОСАГО и КАСКО,
-                включая судебную практику.
-            </p>
-        </div>
-
-        <div class="why-card">
-            <div class="why-card-icon">📚</div>
-            <h3>Проверено на практике</h3>
-            <p>
-                Документы основаны на реальных кейсах и учитывают
-                распространённые ситуации при взаимодействии
-                со страховыми компаниями.
-            </p>
-        </div>
-
-        <div class="why-card">
-            <div class="why-card-icon">🤝</div>
-            <h3>Поддержка юриста</h3>
-            <p>
-                Если спор не удастся урегулировать в досудебном порядке,
-                к делу может подключиться юрист для дальнейшего
-                сопровождения и защиты ваших интересов.
-            </p>
-        </div>
-
-        <div class="why-card">
-            <div class="why-card-icon">📲</div>
-            <h3>Удобно</h3>
-            <p>
-                Получайте готовые заявления, претензии и другие
-                юридические документы прямо в Telegram или MAX
-                без поиска образцов и лишней бюрократии.
-            </p>
-        </div>
-
+        <div class="why-line">
+        <div class="why-pill">⚡ Документы за 5 минут</div>
+        <div class="why-pill">⚖️ Шаблоны от практикующего юриста</div>
+        <div class="why-pill">📚 Основано на реальных кейсах</div>
+        <div class="why-pill">🤝 Возможность юридического сопровождения</div>
+        <div class="why-pill">📲 Получение документов в Telegram и MAX</div>
     </div>
 
 </section>
