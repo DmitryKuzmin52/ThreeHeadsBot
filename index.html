@@ -331,6 +331,73 @@
             text-decoration: underline;
         }
 
+       
+        .why-section {
+            margin-top: 24px;
+        }
+
+        .why-section h2 {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: #111827;
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 16px;
+        }
+
+        .why-card {
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 20px;
+        }
+
+        .why-card-icon {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .why-card h3 {
+            margin: 0 0 8px;
+            font-size: 16px;
+            font-weight: 600;
+            color: #111827;
+        }
+
+        .why-card p {
+            margin: 0;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #4b5563;
+        }
+
+@media (max-width: 600px) {
+    .why-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .why-section h2 {
+        font-size: 18px;
+    }
+
+    .why-card {
+        padding: 16px;
+    }
+
+    .why-card h3 {
+        font-size: 15px;
+    }
+
+    .why-card p {
+        font-size: 13px;
+    }
+}
+</style>
+
         @media (max-width: 600px) {
 
             .layout {
@@ -463,6 +530,66 @@
             <a href="/dosudebnoe-uregulirovanie.html">Досудебное урегулирование</a>
         </div>
     </section>
+
+    <section class="why-section">
+
+    <h2>Почему выбирают ThreeHeadsBot?</h2>
+
+    <div class="why-grid">
+
+        <div class="why-card">
+            <div class="why-card-icon">⚡</div>
+            <h3>Быстро</h3>
+            <p>
+                Готовые заявления, претензии и другие документы
+                формируются за несколько минут.
+            </p>
+        </div>
+
+        <div class="why-card">
+            <div class="why-card-icon">⚖️</div>
+            <h3>Профессионально</h3>
+            <p>
+                Все шаблоны разработаны практикующим юристом
+                с опытом ведения споров по ОСАГО и КАСКО,
+                включая судебную практику.
+            </p>
+        </div>
+
+        <div class="why-card">
+            <div class="why-card-icon">📚</div>
+            <h3>Проверено на практике</h3>
+            <p>
+                Документы основаны на реальных кейсах и учитывают
+                распространённые ситуации при взаимодействии
+                со страховыми компаниями.
+            </p>
+        </div>
+
+        <div class="why-card">
+            <div class="why-card-icon">🤝</div>
+            <h3>Поддержка юриста</h3>
+            <p>
+                Если спор не удастся урегулировать в досудебном порядке,
+                к делу может подключиться юрист для дальнейшего
+                сопровождения и защиты ваших интересов.
+            </p>
+        </div>
+
+        <div class="why-card">
+            <div class="why-card-icon">📲</div>
+            <h3>Удобно</h3>
+            <p>
+                Получайте готовые заявления, претензии и другие
+                юридические документы прямо в Telegram или MAX
+                без поиска образцов и лишней бюрократии.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+    
 </main>
 
 <footer>
