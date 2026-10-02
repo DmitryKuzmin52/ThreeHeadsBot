@@ -338,15 +338,23 @@
         }
        
         .why-section {
-            margin-top: 18px;
+            grid-column: 1 / -1;
+            width: 100%;
+            margin-top: 10px;
             text-align: center;
+        }
+
+        .why-section h2 {
+            margin: 0 0 10px 0;
+            font-size: 22px;
+            font-weight: 600;
         }
 
         .why-line {
             display: grid;
             grid-template-columns: repeat(5, 1fr);
             gap: 12px;
-            margin-top: 12px;
+            margin-top: 0;
         }
 
         .why-pill {
@@ -437,13 +445,14 @@
         }
 
         .why-section {
-            margin-top: 30px;
+            grid-column: auto;
+            margin-top: 24px;
         }
 
         .why-section h2 {
-            font-size: 21px;
-            font-weight: 500;
-            margin: 0 0 16px 0;
+            font-size: 20px;
+            font-weight: 600;
+            margin: 0 0 12px 0;
         }
 
         .why-line {
