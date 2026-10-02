@@ -342,7 +342,8 @@
         }
 
         .why-line {
-            display: flex;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
             gap: 16px;
             width: 100%;
         }
@@ -443,8 +444,7 @@
             }
 
             .why-line {
-                gap: 8px;
-                margin-top: 14px;
+                grid-template-columns: 1fr;
             }
  
             .why-pill {
