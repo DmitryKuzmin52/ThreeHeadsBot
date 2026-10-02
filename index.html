@@ -33,7 +33,7 @@
 <noscript>
     <div><img src="https://mc.yandex.ru/watch/112679490" style="position:absolute; left:-9999px;" alt="" /></div>
 </noscript>    
-</script>
+
 <noscript><div><img src="https://mc.yandex.ru/watch/112679490" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
 
@@ -109,9 +109,10 @@
 
         .layout {
             display: grid;
-            grid-template-columns: 280px minmax(0,1fr);
+            grid-template-columns: 280px minmax(0, 1fr);
             width: 100%;
             max-width: 1800px;
+            box-sizing: border-box;
             margin: 0 auto;
             padding: 32px 40px;
             gap: 24px;
@@ -335,12 +336,13 @@
         .panel-link:hover {
             text-decoration: underline;
         }
-
        
         .why-section {
+            grid-column: 1 / -1;
             margin-top: 50px;
+            width: 100%;
         }
-
+        
         .why-line {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
