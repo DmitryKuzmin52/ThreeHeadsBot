@@ -4,7 +4,7 @@
     <!-- Главная -->
     <url>
         <loc>https://threeheadsbot.ru/</loc>
-        <lastmod>2026-09-15</lastmod>
+        <lastmod>2026-10-03</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
@@ -60,7 +60,7 @@
     <!-- Инструкция после ДТП -->
     <url>
         <loc>https://threeheadsbot.ru/after-dtp.html</loc>
-        <lastmod>2026-09-15</lastmod>
+        <lastmod>2026-09-30</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
@@ -68,7 +68,7 @@
     <!-- Документы -->
     <url>
         <loc>https://threeheadsbot.ru/documents.html</loc>
-        <lastmod>2026-09-15</lastmod>
+        <lastmod>2026-10-07</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -76,7 +76,7 @@
     <!-- Как это работает -->
     <url>
         <loc>https://threeheadsbot.ru/how-it-works.html</loc>
-        <lastmod>2026-09-15</lastmod>
+        <lastmod>2026-10-07</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
