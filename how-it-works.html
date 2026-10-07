@@ -126,32 +126,130 @@
         }
 
         .cta-bot {
-            background: #f8fafc;
+            background: #ffffff;
             border: 1px solid #e5e7eb;
-            border-radius: 12px;
-            padding: 20px;
+            border-radius: 14px;
+            padding: 24px 20px;
             margin: 30px 0;
             text-align: center;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.04);
+        }
+
+        .cta-bot h2 {
+            margin-top: 0;
+            margin-bottom: 6px;
+            font-size: 16px;
+            color: #111827;
+        }
+
+        .cta-bot p {
+            margin: 0 auto 18px;
+            max-width: 620px;
+            color: #6b7280;
         }
 
         .bot-buttons {
             display: flex;
-            gap: 12px;
             justify-content: center;
+            gap: 12px;
             flex-wrap: wrap;
         }
 
         .bot-btn {
-            background: #2563eb;
-            color: #fff;
+            display: flex;
+            align-items: center;
+            width: 230px;
+            min-height: 62px;
+            box-sizing: border-box;
+
+            padding: 10px 14px;
+
+            border-radius: 12px;
             text-decoration: none;
-            padding: 12px 20px;
-            border-radius: 8px;
-            font-weight: 600;
+
+            transition:
+                transform 0.18s ease,
+                box-shadow 0.18s ease,
+                border-color 0.18s ease;
+
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
         }
 
         .bot-btn:hover {
-            background: #1d4ed8;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.10);
+        }
+
+        .bot-icon {
+            width: 38px;
+            height: 38px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            flex-shrink: 0;
+
+            border-radius: 10px;
+
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .bot-btn-text {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            margin-left: 11px;
+            line-height: 1.2;
+        }
+
+        .bot-btn-text strong {
+            font-size: 14px;
+        }
+
+        .bot-btn-text small {
+            margin-top: 3px;
+            font-size: 11px;
+            font-weight: 400;
+        }
+
+        .bot-arrow {
+            margin-left: auto;
+            font-size: 20px;
+            font-weight: 400;
+        }
+
+        .telegram-btn {
+            background: #f0f9ff;
+            border: 1px solid #bae6fd;
+            color: #0369a1;
+        }
+        
+        .telegram-btn .bot-icon {
+            background: #0ea5e9;
+            color: #ffffff;
+        }
+
+        .telegram-btn .bot-btn-text small {
+            color: #64748b;
+        }
+
+        .max-btn {
+            background: #f8fafc;
+            border: 1px solid #dbeafe;
+            color: #1e40af;
+        }
+
+        .max-btn .bot-icon {
+            background: #2563eb;
+            color: #ffffff;
+            font-size: 16px;
+        }
+
+        .max-btn .bot-btn-text small {
+            color: #64748b;
         }
 
         .footer {
@@ -204,6 +302,22 @@
                 width: 100%;
                 text-align: center;
                 padding: 4px 0;
+            }
+
+            .cta-bot {
+                padding: 20px 12px;
+                margin: 24px 0;
+            }
+
+            .bot-buttons {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+
+            .bot-btn {
+                width: 100%;
+                max-width: 320px;
             }
         }
     </style>
@@ -321,8 +435,9 @@
         <p>Бот не собирает и не хранит персональные данные. Бот подбирает и присылает полностью готовый и корректный документ для конкретной ситуации, пользователь самостоятельно заполняет лишь личные данные — конфиденциальность полностью сохраняется.</p>
     </div>
 
-    <div class="cta-bot">
-    <h2>Попробовать ThreeHeadsBot</h2>
+<div class="cta-bot">
+
+    <h2>Получить документ через ThreeHeadsBot</h2>
 
     <p>
         Выберите удобный мессенджер и получите готовый юридический документ
@@ -330,19 +445,39 @@
     </p>
 
     <div class="bot-buttons">
+
         <a href="https://t.me/ThreeHeadsBot"
-           class="bot-btn"
+           class="bot-btn telegram-btn"
            target="_blank"
            rel="noopener noreferrer">
-            Telegram-бот
+
+            <span class="bot-icon">✈</span>
+
+            <span class="bot-btn-text">
+                <strong>Telegram</strong>
+                <small>Открыть бота</small>
+            </span>
+
+            <span class="bot-arrow">→</span>
+
         </a>
 
         <a href="https://max.ru/id213001406917_bot"
-           class="bot-btn"
+           class="bot-btn max-btn"
            target="_blank"
            rel="noopener noreferrer">
-            MAX-бот
+
+            <span class="bot-icon">M</span>
+
+            <span class="bot-btn-text">
+                <strong>MAX</strong>
+                <small>Открыть бота</small>
+            </span>
+
+            <span class="bot-arrow">→</span>
+
         </a>
+
     </div>
 
 </div>
