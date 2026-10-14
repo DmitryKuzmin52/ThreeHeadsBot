@@ -200,69 +200,49 @@
         }
 
         
-/* Каталог образцов претензий */
-        .preview-section {
-            padding: 16px;
+        .claim-preview-list {
+            margin-top: 18px;
         }
-
-        .preview-section > h2 {
-            margin-top: 0;
-            margin-bottom: 14px;
+        
+        .claim-preview-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            padding: 14px 0;
+            border-bottom: 1px solid #e5e7eb;
         }
-
-        .preview-card {
-            background: #ffffff;
-            border: 1px solid #e5e7eb;
-            border-radius: 10px;
-            padding: 16px;
-            margin: 0 0 16px;
-        }
-
-        .preview-card h3 {
-            font-size: 17px;
-            line-height: 1.4;
-            margin: 0 0 8px;
-        }
-
-        .preview-card p {
-            margin: 0;
-        }
-
-        .preview-image-link {
-            display: block;
-            width: 100%;
-            max-width: 420px;
-            margin: 16px auto 0;
-            text-decoration: none;
-        }
-
-        .preview-image {
-            display: block;
-            width: 100%;
-            height: 320px;
-            object-fit: contain;
-            object-position: center;
-            box-sizing: border-box;
-            border: 1px solid #e5e7eb;
-            border-radius: 8px;
-        background: #f9fafb;
-        }
-
-        .preview-hint {
-            text-align: center;
-            font-size: 12px;
-            color: #6b7280;
-            margin-top: 8px !important;
-        }
-
-        .preview-list {
-            padding-left: 20px;
-            margin: 12px 0 0;
-        }
-
-        .preview-list li {
-            margin-bottom: 8px;
+        
+        .claim-preview-row > span {
+            flex: 1;
+            min-width: 0;
             line-height: 1.5;
+        }
+        
+        .preview-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            flex-shrink: 0;
+            padding: 9px 15px;
+            border-radius: 8px;
+            background: #1d4ed8;
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            white-space: nowrap;
+            transition: background 0.2s ease;
+        }
+        
+        .preview-button:hover {
+            background: #1e40af;
+        }
+        
+        .preview-button span {
+            font-size: 17px;
+            line-height: 1;
         }
 
         @media (max-width: 600px) {
@@ -308,24 +288,15 @@
                 box-sizing: border-box;
             }
 
-            .preview-section {
-                padding: 12px;
+            .claim-preview-row {
+                gap: 10px;
+                padding: 12px 0;
+                font-size: 14px;
             }
-
-            .preview-card {
-                padding: 12px;
-            }
-
-            .preview-card h3 {
-                font-size: 16px;
-            }
-
-            .preview-image-link {
-                max-width: 100%;
-            }
-
-            .preview-image {
-                height: 250px;
+            
+            .preview-button {
+                padding: 8px 10px;
+                font-size: 13px;
             }
         }
     </style>
@@ -395,53 +366,79 @@
 
 
 <div class="block preview-section">
-
     <h2>Образцы претензий в страховую компанию</h2>
-
-    <div class="preview-card">
-
-        <h3>Претензия о занижении страховой выплаты</h3>
-
-        <p>
-            Образец претензии в страховую компанию после ДТП,
-            если размер страхового возмещения оказался ниже
-            обоснованной суммы ущерба.
-        </p>
-
-        <a
-            href="/pretenziya-po-forme-i-razmeru.png"
-            class="preview-image-link"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Открыть полный образец претензии о занижении страховой выплаты"
-        >
-            <img
-                src="/pretenziya-po-forme-i-razmeru.png"
-                alt="Образец претензии в страховую компанию о занижении выплаты по ОСАГО после ДТП"
-                class="preview-image"
-                loading="lazy"
-                decoding="async"
-            >
-        </a>
-
-        <p class="preview-hint">
-            Нажмите на образец, чтобы открыть его в полном размере.
-        </p>
-
+    <p>
+        Посмотрите образцы претензий по ОСАГО и КАСКО,
+        связанные со страховыми выплатами, ремонтом автомобиля
+        и разногласиями со страховой компанией.
+    </p>
+    <div class="claim-preview-list">
+        <div class="claim-preview-row">
+            <span>Претензия о размере и форме страхового возмещения</span>
+            <a class="preview-button"
+               href="/pretenziya-po-forme-i-razmeru.png"
+               target="_blank" rel="noopener">
+                Образец <span aria-hidden="true">↗</span>
+            </a>
+        </div>
+        <div class="claim-preview-row">
+            <span>Претензия о нарушении сроков ремонта автомобиля</span>
+            <a class="preview-button"
+               href="/pretenziya-po-sroku-remonta.png"
+               target="_blank" rel="noopener">
+                Образец <span aria-hidden="true">↗</span>
+            </a>
+        </div>
+        <div class="claim-preview-row">
+            <span>Претензия о нарушении сроков страховой выплаты</span>
+            <a class="preview-button"
+               href="/pretenziya-po-sroku-viplaty.png"
+               target="_blank" rel="noopener">
+                Образец <span aria-hidden="true">↗</span>
+            </a>
+        </div>
+        <div class="claim-preview-row">
+            <span>Претензия по некачественному ремонту автомобиля</span>
+            <a class="preview-button"
+               href="/pretenziya-nekachestvenniy-remont.png"
+               target="_blank" rel="noopener">
+                Образец <span aria-hidden="true">↗</span>
+            </a>
+        </div>
+        <div class="claim-preview-row">
+            <span>Претензия, если СТОА отказывает в ремонте</span>
+            <a class="preview-button"
+               href="/pretenziya-esli-STOA-otkazivaet-v-remonte.png"
+               target="_blank" rel="noopener">
+                Образец <span aria-hidden="true">↗</span>
+            </a>
+        </div>
+        <div class="claim-preview-row">
+            <span>Претензия при недоплате по КАСКО при полной гибели автомобиля</span>
+            <a class="preview-button"
+               href="/pretenziya-strahovaya-ne-doplatila-pri-polnoy-gibeli-TS-KASKO.png"
+               target="_blank" rel="noopener">
+                Образец <span aria-hidden="true">↗</span>
+            </a>
+        </div>
+        <div class="claim-preview-row">
+            <span>Претензия если страховая направляет на СТОА, неаккредитованное для сохранения гарантии</span>
+            <a class="preview-button"
+               href="/pretenziya-negarantiynoe-STOA.png"
+               target="_blank" rel="noopener">
+                Образец <span aria-hidden="true">↗</span>
+            </a>
+        </div>
+        <div class="claim-preview-row">
+            <span>Претензия о смене СТОА</span>
+            <a class="preview-button"
+               href="/pretenzia-o-smene-STOA.png"
+               target="_blank" rel="noopener">
+                Образец <span aria-hidden="true">↗</span>
+            </a>
+        </div>
     </div>
-
-    <h3>Другие виды претензий</h3>
-
-    <ul class="preview-list">
-        <li>Претензия о нарушении сроков выплаты.</li>
-        <li>Претензия об отказе в страховой выплате.</li>
-        <li>Претензия по некачественному ремонту автомобиля.</li>
-        <li>Претензия по направлению на ремонт.</li>
-        <li>Претензия по договору КАСКО.</li>
-    </ul>
-
 </div>
-
 
     <div class="block">
 
